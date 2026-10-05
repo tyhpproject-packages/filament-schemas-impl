@@ -1,0 +1,51 @@
+{
+    "name": "tyhpdef/filament-schemas-impl",
+    "description": "Implementation package for tyhpdef/filament-schemas. Require tyhpdef/filament-schemas, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "5.8.2.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": "8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/laravel-framework": "@dev",
+                "tyhpdef/livewire-livewire": "@dev",
+                "tyhpdef/filament-support": "@dev",
+                "tyhpdef/filament-forms": "@dev",
+                "tyhpdef/filament-actions": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/filament-schemas"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "filament/schemas": "5.8.2"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/laravel-framework": "@dev",
+        "tyhpdef/livewire-livewire": "@dev",
+        "tyhpdef/filament-support": "@dev",
+        "tyhpdef/filament-forms": "@dev",
+        "tyhpdef/filament-actions": "@dev"
+    }
+}
